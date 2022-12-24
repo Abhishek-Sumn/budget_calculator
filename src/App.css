@@ -2,6 +2,20 @@
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  --gradient: linear-gradient(90deg,
+      #ee9ca7,
+      #ffdde1);
+
+  --gradient2: linear-gradient(90deg,
+      #f5d6da,
+      #eccacd);
+
+  --gradient3: linear-gradient(90deg,
+      #f5d6da,
+      #fadde0);
+
+
 }
 
 * {
@@ -17,6 +31,24 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 15s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left
+  }
+
+  50% {
+    background-position: right
+  }
+
+  100% {
+    background-position: left
+  }
 }
 
 .container {
@@ -47,6 +79,9 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+
+  background-image: var(--gradient2);
+  animation: bg-animation 5s infinite;
 }
 
 .inc-exp-container>div {
@@ -109,6 +144,8 @@ input[type='number'] {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+
+
 }
 
 .list li {
@@ -120,6 +157,9 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+
+  background-image: var(--gradient2);
+  animation: bg-animation 5s infinite;
 }
 
 .list li.plus {
@@ -148,6 +188,12 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+
+.inputt {
+  background-image: var(--gradient3);
+  animation: bg-animation 5s infinite;
 }
 
 @media (max-width: 320px) {

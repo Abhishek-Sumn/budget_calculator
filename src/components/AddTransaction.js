@@ -32,7 +32,7 @@ export const AddTransaction = () => {
 
                     <label htmlFor="text">Text</label>
 
-                    <input type="text" value={text}
+                    <input className='inputt' type="text" value={text}
                         onChange={(event) => setText(event.target.value)}
                         placeholder='Enter Here' />
 
@@ -50,7 +50,7 @@ export const AddTransaction = () => {
                     </label>
 
 
-                    <input type="number"
+                    <input className='inputt' type="number"
                         value={amount}
                         onChange={(event) => setAmount(event.target.value)} placeholder='Enter Rupees' />
 
