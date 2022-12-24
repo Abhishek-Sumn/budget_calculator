@@ -22,7 +22,7 @@ export const AddTransaction = () => {
 
     return (
         <>
-            <h3>Add new Tarnsaction</h3>
+            <h3>Add new Transaction</h3>
 
             <form onSubmit={onsubmit} action="">
 
