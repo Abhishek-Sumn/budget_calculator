@@ -10,10 +10,14 @@ import './App.css';
 function App() {
   return (
     <GlobalProvider className="App">
-
+      <div class='box'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+      </div>
       <Header />
 
-      <div className="conatiner">
+      <div className="conatiner ">
         <Balance />
 
         <IncomeExpenses />
